@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        {{data}}
+
+        <table border="1">
+            <tr>
+                <th>id</th>
+                <th>email</th>
+                <th>first name</th>
+                <th>last name</th>
+                <th>avatar</th>
+            </tr>
+            <tr>
+                <td>{{data.get("id")}}</td>
+                <td>{{data.get("email")}}</td>
+                <td>{{data.get("first_name")}}</td>
+                <td>{{data.get("last_name")}}</td>
+                <td>{{data.get("avatar")}}</td>
+            </tr>
+        </table>
+    </body>
+</html>

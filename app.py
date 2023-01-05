@@ -60,9 +60,9 @@ dic={
     }
 }
 
-# @app.route("/")
-# def api():
-#     return render_template("index.html",data=dic.get('data'))
+@app.route("/")
+def api():
+    return render_template("index.html",data=dic.get('data'))
 
 @app.route("/<head>",methods=['POST','GET'])
 def api1(head):
